@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.ramzancalender.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_ramzanCalenderFragment"
+            app:destination="@id/ramzanCalenderFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_duasCategoriesFragment"
+            app:destination="@id/duasCategoriesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_countDownFragment"
+            app:destination="@id/countDownFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_nimazTimingAdapter"
+            app:destination="@id/nimazTimingAdapter" />
+        <action
+            android:id="@+id/action_homeFragment_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ramzanCalenderFragment"
+        android:name="com.example.ramzancalender.fragments.RamzanCalenderFragment"
+        android:label="RamzanCalenderFragment" />
+    <fragment
+        android:id="@+id/duasCategoriesFragment"
+        android:name="com.example.ramzancalender.fragments.DuasCategoriesFragment"
+        android:label="fragment_duas_categories"
+        tools:layout="@layout/fragment_duas_categories" >
+        <action
+            android:id="@+id/action_duasCategoriesFragment_to_duaFragment"
+            app:destination="@id/duaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/duaFragment"
+        android:name="com.example.ramzancalender.fragments.DuaFragment"
+        android:label="fragment_dua"
+        tools:layout="@layout/fragment_dua" />
+    <fragment
+        android:id="@+id/countDownFragment"
+        android:name="com.example.ramzancalender.fragments.CountDownFragment"
+        android:label="CountDownFragment" />
+    <fragment
+        android:id="@+id/nimazTimingAdapter"
+        android:name="com.example.ramzancalender.fragments.NimazTimingAdapter"
+        android:label="NimazTimingAdapter" />
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.example.ramzancalender.onboarding.ViewPagerFragment"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager" >
+        <action
+            android:id="@+id/action_viewPagerFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>

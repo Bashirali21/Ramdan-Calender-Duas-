@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">RamzanCalender</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="location_desc">To Provide Ramzan Calender According To Your Area You Have To Provide Your Current Location</string>
+</resources>
